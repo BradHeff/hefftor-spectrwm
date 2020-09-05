@@ -1,5 +1,3 @@
-#!/bin/bash
-
 #!/usr/bin/env bash
 
 function run {
@@ -12,5 +10,5 @@ function run {
 wal -nRa 90 &
 run conky -c $HOME/.conkyrc &
 run mpd &
-run glava &
+# run glava &
 run dunst &
