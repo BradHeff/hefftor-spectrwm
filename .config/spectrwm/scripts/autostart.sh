@@ -1,14 +1,7 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-function run {
-  if ! pgrep $1 ;
-  then
-    $@&
-  fi
-}
-
-wal -nRa 90 &
-run conky -c $HOME/.conkyrc &
-run mpd &
-# run glava &
-run dunst &
+/usr/bin/wal -nRa 90 &
+/usr/bin/conky -c $HOME/.conkyrc &
+/usr/bin/mpd &
+# glava &
+/usr/bin/dunst &
